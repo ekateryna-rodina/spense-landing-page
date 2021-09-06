@@ -57,6 +57,37 @@
       bottom: 0;
       background-image: linear-gradient($black, transparent);
     }
+    .popup {
+      visibility: hidden;
+      position: absolute;
+      top: 15rem;
+      left: 50%;
+      right: 0;
+      width: 80%;
+      transform: translateX(-50%);
+      background: $dark-white;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+
+      ul {
+        padding: 0;
+        text-align: center;
+
+        li:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+        a {
+          color: $dark-font;
+        }
+      }
+    }
     &.open {
       span {
         margin: 0;
@@ -80,6 +111,9 @@
       }
 
       .overlay {
+        visibility: visible;
+      }
+      .popup {
         visibility: visible;
       }
     }
