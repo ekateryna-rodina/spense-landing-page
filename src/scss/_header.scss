@@ -1,0 +1,63 @@
+.header {
+  nav {
+    padding: 2.3rem 1rem;
+    height: 5.75rem;
+  }
+  &__promo {
+    width: 100%;
+    background: $black;
+    text-align: center;
+    padding: 1.18em 1.43em;
+    color: $dark-white;
+
+    a.underline {
+      text-decoration: underline;
+      color: $dark-white;
+    }
+  }
+  &__logo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $black;
+    &:visited,
+    &:focus {
+      color: $black;
+    }
+  }
+  &__menu {
+    text-align: right;
+    i {
+      color: $black;
+      font-size: 1.2rem;
+    }
+  }
+  //   desktop
+  &__links {
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      a {
+        color: $black;
+      }
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+  &__cta {
+    a.login {
+      color: $black;
+    }
+    .button {
+      padding: 1.56rem 1.75rem;
+      background: $black;
+      margin-left: 1.75rem;
+      border-radius: 0.2rem;
+      -webkit-border-radius: 0.2rem;
+      -moz-border-radius: 0.2rem;
+      -ms-border-radius: 0.2rem;
+      -o-border-radius: 0.2rem;
+    }
+  }
+}

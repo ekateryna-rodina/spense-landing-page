@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap");
+@import "variables";
+@import "mixins";
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+  font-family: "Cabin", sans-serif;
+  color: $dark-font;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: $dark-white;
+}
+
+// Flexbox
+.flex {
+  display: flex;
+}
+
+@each $class, $fb-d in $fb-direction {
+  .f-d-#{$class} {
+    flex-direction: #{$fb-d};
+  }
+}
+
+@each $class, $fb-jc in $fb-align {
+  .f-jc-#{$class} {
+    justify-content: #{$fb-jc};
+  }
+}
+
+@each $class, $fb-ai in $fb-align {
+  .f-ai-#{$class} {
+    align-items: #{$fb-ai};
+  }
+}
+
+// visibility
+.hide-for-mobile {
+  @include breakpoint-down(small) {
+    display: none;
+  }
+}
+.hide-for-desktop {
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}
+
+.readjast-for-tablet {
+  @include breakpoint-down(medium) {
+    .header__logo {
+      flex: 2;
+    }
+    .header__links,
+    .header__cta {
+      flex: 2;
+      text-align: right;
+    }
+  }
+}
