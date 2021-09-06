@@ -1,0 +1,37 @@
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.4s;
+  -webkit-animation: fadeIn 0.4s;
+}
+
+.fadeOut {
+  animation: fadeOut 0.4s;
+  -webkit-animation: fadeOut 0.4s;
+}

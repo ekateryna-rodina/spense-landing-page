@@ -2,6 +2,8 @@
   nav {
     padding: 2.3rem 1rem;
     height: 5.75rem;
+    display: flex;
+    align-items: center;
   }
   &__promo {
     width: 100%;
@@ -26,9 +28,60 @@
   }
   &__menu {
     text-align: right;
-    i {
-      color: $black;
-      font-size: 1.2rem;
+    span {
+      height: 3px;
+      width: 1.5rem;
+      background: $black;
+      border-radius: 0.1rem;
+      display: block;
+      transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -ms-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transform-origin: 0.5rem 0.1rem;
+      -webkit-border-radius: 0.1rem;
+      -moz-border-radius: 0.1rem;
+      -ms-border-radius: 0.1rem;
+      -o-border-radius: 0.1rem;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+    .overlay {
+      position: absolute;
+      visibility: hidden;
+      top: 12.5rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient($black, transparent);
+    }
+    &.open {
+      span {
+        margin: 0;
+      }
+      span:nth-of-type(1) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+      }
+      span:nth-of-type(2) {
+        opacity: 0;
+      }
+      span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+      }
+
+      .overlay {
+        visibility: visible;
+      }
     }
   }
   //   desktop
@@ -92,6 +145,14 @@
       -moz-border-radius: 0.2rem;
       -ms-border-radius: 0.2rem;
       -o-border-radius: 0.2rem;
+      transition: opacity 0.4s;
+      -webkit-transition: opacity 0.4s;
+      -moz-transition: opacity 0.4s;
+      -ms-transition: opacity 0.4s;
+      -o-transition: opacity 0.4s;
+      &:hover {
+        opacity: 0.75;
+      }
     }
   }
 }

@@ -4,7 +4,22 @@
     parent.querySelectorAll("a").forEach((a) => a.classList.remove("active"));
     e.target.classList.add("active");
   }
+  function toggleBars() {
+    const menuBars = document.getElementById("toggleMenu");
+    const open = menuBars.classList.toggle("open");
+    // toggle overlay
+    const overlay = document.querySelector(".overlay");
+    if (open) {
+      overlay.classList.add("fadeIn");
+      overlay.classList.remove("fadeOut");
+    } else {
+      overlay.classList.add("fadeOut");
+      overlay.classList.remove("fadeIn");
+    }
+  }
   const links = document.querySelectorAll(".header__links>li");
-  console.log(links);
+  //   toggle bars
+  const menuBars = document.getElementById("toggleMenu");
   links.forEach((l) => l.addEventListener("click", onActiveMenu, true));
+  menuBars.addEventListener("click", toggleBars, true);
 })();
