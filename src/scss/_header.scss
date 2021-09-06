@@ -37,8 +37,42 @@
     margin: 0;
     li {
       display: inline;
+      position: relative;
       a {
         color: $black;
+        transition: color 0.2s ease-in-out;
+        -webkit-transition: color 0.2s ease-in-out;
+        -moz-transition: color 0.2s ease-in-out;
+        -ms-transition: color 0.2s ease-in-out;
+        -o-transition: color 0.2s ease-in-out;
+        &:hover {
+          color: lighten($black, 30%);
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -1rem;
+          left: 50%;
+          right: 0;
+          height: 3px;
+          background: $dark-font;
+          width: 0;
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px;
+          transition: 0.4s;
+          -webkit-transition: 0.4s;
+          -moz-transition: 0.4s;
+          -ms-transition: 0.4s;
+          -o-transition: 0.4s;
+        }
+        &.active::before {
+          width: 100%;
+          left: 0;
+        }
       }
       &:not(:last-child) {
         margin-right: 2rem;
