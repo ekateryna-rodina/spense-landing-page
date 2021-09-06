@@ -1,0 +1,20 @@
+// flexbox
+$fb-align: (
+  "c": center,
+  "sb": space-between,
+  "sa": space-around,
+  "fs": flex-start,
+  "fe": flex-end,
+);
+$fb-direction: (
+  "r": row,
+  "c": column,
+);
+
+// colors
+$black: hsl(0, 0, 0);
+$gray: hsl(36, 14%, 93%);
+$light-gray: hsl(60, 1%, 70%);
+$dark-white: hsl(0, 0, 95%);
+$dark-header-font: hsl(0, 0%, 16%);
+$dark-font: hsl(44, 14%, 31%);
