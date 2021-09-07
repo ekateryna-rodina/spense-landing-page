@@ -170,23 +170,5 @@
     a.login {
       color: $black;
     }
-    .button {
-      padding: 1.56rem 1.75rem;
-      background: $black;
-      margin-left: 1.75rem;
-      border-radius: 0.2rem;
-      -webkit-border-radius: 0.2rem;
-      -moz-border-radius: 0.2rem;
-      -ms-border-radius: 0.2rem;
-      -o-border-radius: 0.2rem;
-      transition: opacity 0.4s;
-      -webkit-transition: opacity 0.4s;
-      -moz-transition: opacity 0.4s;
-      -ms-transition: opacity 0.4s;
-      -o-transition: opacity 0.4s;
-      &:hover {
-        opacity: 0.75;
-      }
-    }
   }
 }
