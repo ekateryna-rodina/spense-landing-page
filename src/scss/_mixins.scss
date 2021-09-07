@@ -1,19 +1,23 @@
 $breakpoints-up: (
-  "medium": 48rem,
-  // 768 - 1024
-  "large": 64rem,
-  //1024 - 1739
-  "x-large": 108.75rem,
-  //1740
+  "small": 20rem,
+  // 320px — 480px: Mobile devices.
+  "medium": 30.0625rem,
+  // 481px — 768px: iPads, Tablets.
+  "large": 48.0625rem,
+  // 769px — 1024px: Small screens, laptops.
+  "x-large": 64.0625rem,
+  // 1025px — 1200px: Desktops, large screens.
+  "xx-large": 75.0625rem // 1201px and more — Extra large screens, TV.,,
 );
 
 $breakpoints-down: (
-  "small": 47.9375rem,
-  // 767 - 0
-  "medium": 63.9375rem,
-  // 1023 - 768
-  "large": 108.68rem,
-  // 1740 - 1024
+  "small": 30rem,
+  // 320px — 480px: Mobile devices
+  "medium": 48rem,
+  //  481px — 768px: iPads, Tablets.
+  "large": 64rem,
+  // 769px — 1024px: Small screens, laptops.
+  "x-large": 75rem // 1025px — 1200px: Desktops, large screens.,,,
 );
 
 @mixin breakpoint-up($size) {

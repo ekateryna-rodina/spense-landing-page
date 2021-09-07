@@ -28,7 +28,10 @@
           <a class="header__logo" href="#"> spense. </a>
         </div>
 
-        <div id="toggleMenu" class="header__menu hide-for-desktop">
+        <div
+          id="toggleMenu"
+          class="header__menu hide-for-desktop hide-for-tablet"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -55,7 +58,21 @@
     </header>
     <section class="hero">
       <div class="hero__img">
-        <img src="./src/assets/Hero Image (Mobile).png" alt="" />
+        <img
+          class="show-for-mobile"
+          src="./src/assets/Hero Image (Mobile).png"
+          alt=""
+        />
+        <img
+          class="show-for-tablet hide-for-desktop"
+          src="./src/assets/Hero Image (Tablet).png"
+          alt=""
+        />
+        <img
+          class="show-for-desktop"
+          src="./src/assets/Hero Image (Desktop).png"
+          alt=""
+        />
       </div>
       <div class="hero__text">
         <div class="container">
@@ -89,7 +106,7 @@
           </form>
         </div>
       </div>
-      <div class="hero__partner-logos flex f-d-r f-jc-sb f-ai-c">
+      <!-- <div class="hero__partner-logos flex f-d-r f-jc-sb f-ai-c">
         <img src="./src/assets/Dribbble Logo.png" alt="" />
         <img
           class="hide-for-mobile"
@@ -114,7 +131,7 @@
           alt=""
         />
         <img src="./src/assets/Youtube Logo.png" alt="" />
-      </div>
+      </div> -->
     </section>
     <script src="./src/js/index.js"></script>
   </body>
