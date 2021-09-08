@@ -96,8 +96,9 @@ a:hover {
     }
     .header__links,
     .header__cta {
-      flex: 3;
+      flex: 4;
       text-align: right;
+      font-size: 65%;
     }
   }
   @include breakpoint-up(medium) {
