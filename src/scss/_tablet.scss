@@ -7,8 +7,13 @@
     }
   }
   .hero {
+    line-height: $line-height-tablet;
     .container {
       padding-bottom: 3.68rem;
+      h1 {
+        line-height: 2rem;
+        font-size: 1.8rem;
+      }
     }
   }
   .benefit-1 {
@@ -16,6 +21,19 @@
     &__text {
       width: 71%;
       padding: 4.5rem 0;
+    }
+  }
+  .benefit-2 {
+    height: 34.5rem;
+    width: 90%;
+    line-height: $line-height-tablet;
+    margin: 3.6rem auto;
+    &__img {
+      margin-top: 4.125rem;
+      img {
+        width: 39rem;
+        height: auto;
+      }
     }
   }
 }

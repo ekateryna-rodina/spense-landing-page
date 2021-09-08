@@ -16,7 +16,9 @@
   }
   &__img {
     margin-top: 1rem;
-    width: 25rem;
-    height: auto;
+    img {
+      width: 22rem;
+      height: auto;
+    }
   }
 }
