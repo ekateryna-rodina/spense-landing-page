@@ -113,6 +113,10 @@ a:hover {
   margin: 0 auto;
 }
 
+$line-height-mobile: 1.8rem;
+$line-height-tablet: 2rem;
+$line-height-tablet: 2.2rem;
+
 // typography
 
 @include breakpoint-up(large) {
