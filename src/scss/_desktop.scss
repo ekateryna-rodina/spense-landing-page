@@ -52,6 +52,7 @@
     padding-bottom: 5.25rem;
   }
   .benefit-1 {
+    width: 79%;
     height: 30.75rem;
     display: flex;
     flex-direction: row;
@@ -63,11 +64,12 @@
     }
   }
   .benefit-2 {
+    width: 79%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem auto;
+    margin: 1.5rem auto;
     &__text {
       flex: 1;
       order: 2;
@@ -75,6 +77,31 @@
     &__img {
       flex: 1;
       order: 1;
+    }
+  }
+  .footer {
+    justify-content: space-between;
+    &__about-company {
+      padding: 0 4rem 0 0;
+      flex: 6;
+    }
+    &__resources,
+    &__site-map,
+    &__opportunities,
+    &__company {
+      flex: 3;
+      .links {
+        padding: 0;
+        margin: 0;
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .container {
+      width: 79%;
+      margin: auto;
     }
   }
 }
