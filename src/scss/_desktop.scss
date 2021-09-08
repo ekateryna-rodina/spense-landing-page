@@ -89,6 +89,8 @@
     &__site-map,
     &__opportunities,
     &__company {
+      padding-left: 0;
+      margin-bottom: 0;
       flex: 3;
       .links {
         padding: 0;

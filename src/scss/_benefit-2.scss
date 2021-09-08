@@ -1,8 +1,7 @@
 .benefit-2 {
-  height: 26.6rem;
   width: 90%;
   line-height: $line-height-mobile;
-  margin: 2.81rem auto;
+  margin: 2.81rem auto 0 auto;
   &__text {
     h2 {
       margin: 0;
@@ -15,9 +14,11 @@
     }
   }
   &__img {
-    margin-top: 1rem;
+    margin-top: 1rem auto;
+    width: 90%;
     img {
-      width: 22rem;
+      width: 100%;
+      // width: 20rem;
       height: auto;
     }
   }
