@@ -1,0 +1,8 @@
+@include breakpoint-up(medium) {
+  .logos {
+    img {
+      width: 15%;
+      height: auto;
+    }
+  }
+}

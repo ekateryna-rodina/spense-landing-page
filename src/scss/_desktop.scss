@@ -8,12 +8,15 @@
       width: 79%;
     }
   }
+  .background {
+    padding-bottom: 5.25rem;
+  }
   .hero {
     display: flex;
     flex-direction: row;
     width: 79%;
-    margin: 0.75rem auto 0 auto;
-    // margin-top: 0.75rem;
+    margin: 0 auto;
+    padding-top: 0.75rem;
     &__img {
       flex: 2;
       order: 2;
@@ -38,6 +41,14 @@
           font-weight: 600;
         }
       }
+    }
+  }
+  .logos {
+    width: 79%;
+    margin: auto;
+    img {
+      width: 12%;
+      height: auto;
     }
   }
 }

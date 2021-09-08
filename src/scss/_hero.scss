@@ -1,6 +1,7 @@
 .hero {
   &__img {
     width: 100%;
+    display: flex;
     img {
       display: none;
       width: 90.6%;
@@ -9,6 +10,9 @@
     }
   }
   &__text {
+    .container {
+      padding-bottom: 2.3rem;
+    }
     h1 {
       font-size: 1.5rem;
       margin: 0;
@@ -54,13 +58,6 @@
         padding-top: 0;
         padding-bottom: 0;
       }
-    }
-  }
-  &__partner-logos {
-    padding: 0 1rem;
-    img {
-      width: 30%;
-      height: auto;
     }
   }
 }
