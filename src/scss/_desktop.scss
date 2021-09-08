@@ -51,4 +51,15 @@
   .background {
     padding-bottom: 5.25rem;
   }
+  .benefit-1 {
+    height: 30.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    &__text {
+      width: 40%;
+      margin: 0 7.25rem;
+    }
+  }
 }
