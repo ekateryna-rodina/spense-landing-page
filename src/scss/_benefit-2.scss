@@ -1,0 +1,22 @@
+.benefit-2 {
+  height: 26.6rem;
+  width: 90%;
+  line-height: $line-height-mobile;
+  margin: 2.81rem auto;
+  &__text {
+    h2 {
+      margin: 0;
+      line-height: 2rem;
+      color: $black;
+    }
+    a {
+      color: $dark-font;
+      text-decoration: underline;
+    }
+  }
+  &__img {
+    margin-top: 1rem;
+    width: 25rem;
+    height: auto;
+  }
+}
