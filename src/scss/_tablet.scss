@@ -1,8 +1,14 @@
 @include breakpoint-up(medium) {
   .logos {
+    padding: 3rem 0;
     img {
       width: 15%;
       height: auto;
+    }
+  }
+  .hero {
+    .container {
+      padding-bottom: 3.68rem;
     }
   }
 }
